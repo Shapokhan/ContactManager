@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from './Context'
-import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import {HashRouter as Router, Route, Switch } from 'react-router-dom'
 import Contacts from './components/contact/Contacts'
 import Header from './components/layout/Header'
 import About from './components/pages/About'
@@ -14,7 +14,7 @@ import 'font-awesome/css/font-awesome.min.css'
 function App() {
   return (
     <Provider>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
       <div className="App">
         <Header branding="Contact Manager" />
         <div className="container">
